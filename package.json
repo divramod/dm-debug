@@ -1,0 +1,43 @@
+{
+  "private": false,
+  "name": "dm-debug",
+  "shortcut": "dmde",
+  "version": "0.0.0",
+  "description": "node debug helper",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --harmony --require co-mocha --watch --reporter landing",
+    "start": "node --harmony ./bin/dm-debug"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/divramod/dm-debug.git"
+  },
+  "keywords": [
+    "npm",
+    "template"
+  ],
+  "author": "AUTHOR",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/divramod/dm-debug/issues"
+  },
+  "homepage": "https://github.com/divramod/dm-debug",
+  "devDependencies": {
+    "chai": "^2.1.0",
+    "co-mocha": "^1.1.0",
+    "mocha": "^2.1.0"
+  },
+  "dependencies": {
+    "co": "^4.4.0",
+    "colors": "^1.1.2",
+    "dm-npm": "^0.1.14",
+    "shelljs": "^0.5.3"
+  },
+  "bin": {
+    "dmde": "./bin/dm-debug",
+    "dm-debug": "./bin/dm-debug",
+    "gdmde": "./bin/gdm-debug",
+    "dmdeg": "./bin/gdm-debug"
+  }
+}
