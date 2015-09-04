@@ -16,6 +16,11 @@ jobs.index = co.wrap(function*() {
 
         // automatically add tasks here
 
+        // =========== [ test1 ] ===========
+        else if (['test1'].indexOf(argv2) > -1) {
+            var task = require("./tasks/test1/index.js");
+            task.start();
+        }
 
         // =========== [ getCommonTasks (dm-npm) ] ===========
         else {
